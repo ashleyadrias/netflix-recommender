@@ -19,13 +19,19 @@ column1 = dbc.Col(
             """,style={'width': '90%', 'display': 'inline-block'}, className='mb-4'
         ),
         dcc.Textarea(id='tokens',placeholder='Example: High School Vampire Drama',style={'height':100,'width': '90%', 'display': 'inline-block'},value='',className='mb-4'),
-    html.Div(id='prediction-content', className='lead'),
-    html.Div(id='prediction-content2', className='lead'),
-    html.Div(id='prediction-content3', className='lead'),
-    html.Div(id='prediction-content4', className='lead'),
-    html.Div(id='prediction-content5', className='lead'),
-    html.Img(src='assets/hp.jpg',style={'width': '90%', 'display': 'inline-block'}, className='img-fluid'),
-    # dbc.FormText("Type something in the box above"),
+        dcc.Markdown(
+            """
+        
+            #### My Movie Recommendations: 
+            """,style={'width': '90%', 'display': 'inline-block'}, className='mb-4'
+        ),
+        html.Div(id='prediction-content', className='lead'),
+        html.Div(id='prediction-content2', className='lead'),
+        html.Div(id='prediction-content3', className='lead'),
+        html.Div(id='prediction-content4', className='lead'),
+        html.Div(id='prediction-content5', className='lead'),
+        html.Img(src='assets/hp.jpg',style={'width': '90%', 'display': 'inline-block'}, className='img-fluid'),
+        # dbc.FormText("Type something in the box above"),
                
         # for _ in ALLOWED_TYPES
     ],style={'display': 'inline-block'}

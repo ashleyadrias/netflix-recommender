@@ -32,7 +32,7 @@ navbar = dbc.NavbarSimple(
         dbc.NavItem(dcc.Link('Predictions', href='/predictions', className='nav-link')), 
         # dbc.NavItem(dcc.Link('Process', href='/process', className='nav-link')), 
         dbc.NavItem(dcc.Link('About', href='/about', className='nav-link')),
-        # dbc.NavItem(dcc.Link('Evaluation', href='/evaluation', className='nav-link')), 
+        dbc.NavItem(html.A('Notebook', href='./notebooks/netflix-recommender-notebook.html', className='nav-link', target="_blank")), 
     ],
     sticky='top',
     color='danger', 
